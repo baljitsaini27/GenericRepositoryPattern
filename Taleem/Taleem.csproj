@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>aspnet-Taleem-340244D4-1E96-4EA0-B128-72252CD5F7FF</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Scripts\bootstrap.min.js" />
+    <Content Remove="wwwroot\Scripts\jquery-1.10.2.min.js" />
+    <Content Remove="wwwroot\Scripts\jquery-1.10.2.min.map" />
+    <Content Remove="wwwroot\Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Remove="wwwroot\Scripts\jquery.validate.min.js" />
+    <Content Remove="wwwroot\Scripts\jquery.validate.unobtrusive.min.js" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.2" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.1" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Scripts\bootstrap.min.js" />
+    <None Include="wwwroot\Scripts\jquery-1.10.2.min.js" />
+    <None Include="wwwroot\Scripts\jquery-1.10.2.min.map" />
+    <None Include="wwwroot\Scripts\jquery.unobtrusive-ajax.min.js" />
+    <None Include="wwwroot\Scripts\jquery.validate.min.js" />
+    <None Include="wwwroot\Scripts\jquery.validate.unobtrusive.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Taleem.BAL\Taleem.BAL.csproj" />
+    <ProjectReference Include="..\Taleem.Data\Taleem.Data.csproj" />
+  </ItemGroup>
+
+</Project>

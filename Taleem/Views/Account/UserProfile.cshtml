@@ -1,0 +1,126 @@
+﻿@model Taleem.Data.ViewModel.vmUser
+@{
+    ViewData["Title"] = "UserProfile";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+  
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Scripts/PageScripts/UserProfile.js"></script>
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Profile</h3>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        User Personal Information
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#profile" data-toggle="tab">Profile</a>
+                            </li>
+                            <li>
+                                <a href="#changepassword" data-toggle="tab">Change Password</a>
+                            </li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <form asp-action="UserProfile" asp-controller="Account" enctype="multipart/form-data" method="post">
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="profile">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-lg-12"> 
+                                                <div class="form-group text-center">
+                                                    <a href="javascript:void(0)">
+                                                        <img width="120" height="120" id="ProfilePic" src="~/images/varun.jpg" class="thumb-lg img-circle" alt="img">
+                                                    </a>
+                                                    <input id="PhotoUpload"  type="file"  multiple onchange="onInputChange(event)" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <p class="help-block">First Name</p>
+                                                    @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control", @placeholder = "Enter First Name" })
+                                                    @Html.ValidationMessageFor(m => m.FirstName)
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <p class="help-block">Email</p> 
+                                                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Enter Email" })
+                                                    @Html.ValidationMessageFor(m => m.Email)
+                                                </div>
+                                                <div class="form-group">
+                                                    <p class="help-block">Employee Id</p>
+                                                    <input class="form-control" placeholder="Enter Employee Id">
+                                                </div>
+                                                @*<div class="form-group">
+                                                        <label>Selects</label>
+                                                        <select class="form-control">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>*@
+                                            </div>
+                                            <!-- /.col-lg-16 (nested) -->
+
+                                            <div class="col-lg-6">
+
+                                                <div class="form-group">
+                                                    <p class="help-block">Last Name</p>
+                                                    @Html.TextBoxFor(m => m.LastName, new { @class = "form-control", @placeholder = "Enter Last Name" })
+                                                    @Html.ValidationMessageFor(m => m.LastName)
+                                                </div>
+                                                <div class="form-group">
+                                                    <p class="help-block">Phone</p> 
+                                                    @Html.TextBoxFor(m => m.User.Phone, new { @class = "form-control", @placeholder = "Enter Phone Number" }) 
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <p class="help-block">Select Department</p>
+                                                    @Html.DropDownListFor(m => m.DepartmentId, new SelectList(Taleem.BAL.Repositories.UserRepository.GetDepartmentList(), "Id", "Name"), "Select", new { @class = "form-control" })
+                                                    @Html.ValidationMessageFor(m => m.DepartmentId) 
+                                                </div>
+                                            </div>
+                                            <!-- /.col-lg-16 (nested) -->
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="row">
+                                            <div class="col-lg-12 text-right"> 
+                                                <input type="submit" class="btn btn-default" value="Submit" />
+                                            </div>
+                                        </div>
+                                        <!-- /.row (nested) -->
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="changepassword">
+                                    <h4>Change Password</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.col-lg-12 -->
+
+
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+</div>

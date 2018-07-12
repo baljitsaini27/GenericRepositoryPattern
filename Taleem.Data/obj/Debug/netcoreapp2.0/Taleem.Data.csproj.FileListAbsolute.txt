@@ -1,0 +1,8 @@
+D:\SchoolPad\Taleem\Taleem.Data\bin\Debug\netcoreapp2.0\Taleem.Data.deps.json
+D:\SchoolPad\Taleem\Taleem.Data\bin\Debug\netcoreapp2.0\Taleem.Data.dll
+D:\SchoolPad\Taleem\Taleem.Data\bin\Debug\netcoreapp2.0\Taleem.Data.pdb
+D:\SchoolPad\Taleem\Taleem.Data\obj\Debug\netcoreapp2.0\Taleem.Data.csproj.CoreCompileInputs.cache
+D:\SchoolPad\Taleem\Taleem.Data\obj\Debug\netcoreapp2.0\Taleem.Data.AssemblyInfoInputs.cache
+D:\SchoolPad\Taleem\Taleem.Data\obj\Debug\netcoreapp2.0\Taleem.Data.AssemblyInfo.cs
+D:\SchoolPad\Taleem\Taleem.Data\obj\Debug\netcoreapp2.0\Taleem.Data.dll
+D:\SchoolPad\Taleem\Taleem.Data\obj\Debug\netcoreapp2.0\Taleem.Data.pdb

@@ -1,0 +1,12 @@
+﻿.field-validation-error {
+    color: #f00;
+    font-family: "latoregular";
+    font-size: 12px;
+    font-weight: lighter;
+    padding: 4px 0 0;
+    text-align: left;
+}
+
+/*.input-validation-error {
+        border: 1px solid #f00 !important;
+    }*/

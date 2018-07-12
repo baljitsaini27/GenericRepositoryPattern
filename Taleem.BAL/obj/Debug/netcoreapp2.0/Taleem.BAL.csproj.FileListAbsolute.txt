@@ -1,0 +1,14 @@
+D:\SchoolPad\Taleem\Taleem.BAL\obj\Debug\netcoreapp2.0\Taleem.BAL.csprojResolveAssemblyReference.cache
+D:\SchoolPad\Taleem\Taleem.BAL\obj\Debug\netcoreapp2.0\Taleem.BAL.csproj.CoreCompileInputs.cache
+D:\SchoolPad\Taleem\Taleem.BAL\obj\Debug\netcoreapp2.0\Taleem.BAL.AssemblyInfoInputs.cache
+D:\SchoolPad\Taleem\Taleem.BAL\obj\Debug\netcoreapp2.0\Taleem.BAL.AssemblyInfo.cs
+D:\SchoolPad\Taleem\Taleem.BAL\bin\Debug\netcoreapp2.0\Taleem.BAL.deps.json
+D:\SchoolPad\Taleem\Taleem.BAL\bin\Debug\netcoreapp2.0\Taleem.BAL.dll
+D:\SchoolPad\Taleem\Taleem.BAL\bin\Debug\netcoreapp2.0\Taleem.BAL.pdb
+D:\SchoolPad\Taleem\Taleem.BAL\bin\Debug\netcoreapp2.0\Taleem.Data.dll
+D:\SchoolPad\Taleem\Taleem.BAL\bin\Debug\netcoreapp2.0\Taleem.Data.pdb
+D:\SchoolPad\Taleem\Taleem.BAL\obj\Debug\netcoreapp2.0\Taleem.BAL.csproj.CopyComplete
+D:\SchoolPad\Taleem\Taleem.BAL\obj\Debug\netcoreapp2.0\Taleem.BAL.dll
+D:\SchoolPad\Taleem\Taleem.BAL\obj\Debug\netcoreapp2.0\Taleem.BAL.pdb
+D:\SchoolPad\Taleem\Taleem.BAL\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+D:\SchoolPad\Taleem\Taleem.BAL\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
